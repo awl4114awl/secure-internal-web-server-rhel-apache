@@ -63,13 +63,10 @@ sudo dnf install httpd -y
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 223910.png" width="600">
 </p>
-<p align="left">
-  <img src="assets/Screenshot 2026-02-13 231005.png" width="600">
-</p>
 
 ---
 
-### 4. Enabled and Started the Service
+### 3. Enabled and Started the Service
 
 I enabled Apache to start at boot and verified its active state using systemctl.
 
@@ -81,18 +78,18 @@ sudo systemctl status httpd
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 230816.png" width="600">
 </p>
-<p align="left">
-  <img src="assets/Screenshot 2026-02-13 231023.png" width="600">
-</p>
 
 Apache confirmed it was actively listening on port 80.
 
 ---
 
-### 5. Deployed Website Content
+### 4. Deployed Website Content
 
 I created a custom `index.html` file in `/var/www/html/`, which is the default web root directory on RHEL.
 
+<p align="left">
+  <img src="assets/Screenshot 2026-02-13 231023.png" width="600">
+</p>
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 231114.png" width="600">
 </p>
