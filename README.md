@@ -38,9 +38,9 @@ In this scenario, I provisioned a Red Hat Enterprise Linux 9.4 virtual machine i
 
 ## Deployment Process
 
-### 1. Provisioned RHEL 9.4 VM in Azure
+### 1. Established Secure SSH Access
 
-I deployed a Red Hat Enterprise Linux 9.4 (Gen2) virtual machine using Azure IaaS. SSH access was configured during provisioning.
+After I deployed a Red Hat Enterprise Linux 9.4 (Gen2) virtual machine using Azure IaaS, I connected to the VM using SSH from Windows PowerShell and validated the operating system version.
 
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 220214.png" width="600">
@@ -52,21 +52,7 @@ I deployed a Red Hat Enterprise Linux 9.4 (Gen2) virtual machine using Azure Iaa
 
 ---
 
-### 2. Established Secure SSH Access
-
-I connected to the VM using SSH from Windows PowerShell and validated the operating system version.
-
-<p align="left">
-  <img src="assets/Screenshot 2026-02-13 223910.png" width="600">
-</p>
-
-<p align="left">
-  <img src="assets/Screenshot 2026-02-13 230816.png" width="600">
-</p>
-
----
-
-### 3. Installed Apache (httpd)
+### 2. Installed Apache (httpd)
 
 Using the RHEL package manager, I installed the Apache HTTP Server:
 
@@ -74,6 +60,9 @@ Using the RHEL package manager, I installed the Apache HTTP Server:
 sudo dnf install httpd -y
 ```
 
+<p align="left">
+  <img src="assets/Screenshot 2026-02-13 223910.png" width="600">
+</p>
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 231005.png" width="600">
 </p>
@@ -89,7 +78,9 @@ sudo systemctl enable httpd
 sudo systemctl start httpd
 sudo systemctl status httpd
 ```
-
+<p align="left">
+  <img src="assets/Screenshot 2026-02-13 230816.png" width="600">
+</p>
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 231023.png" width="600">
 </p>
