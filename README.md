@@ -90,9 +90,6 @@ I created a custom `index.html` file in `/var/www/html/`, which is the default w
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 231023.png" width="600">
 </p>
-<p align="left">
-  <img src="assets/Screenshot 2026-02-13 231114.png" width="600">
-</p>
 
 ---
 
@@ -103,9 +100,8 @@ Before attempting remote access, I validated functionality directly from the VM 
 ```bash
 curl http://localhost
 ```
-
 <p align="left">
-  <img src="assets/Screenshot 2026-02-13 231301.png" width="600">
+  <img src="assets/Screenshot 2026-02-13 231114.png" width="600">
 </p>
 
 This confirmed:
@@ -128,7 +124,7 @@ ssh -N -L 8080:localhost:80 awl4114awl@20.110.38.39
 This securely forwarded traffic from my local machine (port 8080) to port 80 on the remote RHEL VM.
 
 <p align="left">
-  <img src="assets/Screenshot 2026-02-13 231421.png" width="600">
+  <img src="assets/Screenshot 2026-02-13 231301.png" width="600">
 </p>
 
 I then accessed the site using:
@@ -136,6 +132,10 @@ I then accessed the site using:
 ```
 http://localhost:8080
 ```
+
+<p align="left">
+  <img src="assets/Screenshot 2026-02-13 231421.png" width="600">
+</p>
 
 This allowed encrypted access to the internal web service without expanding the public attack surface.
 
