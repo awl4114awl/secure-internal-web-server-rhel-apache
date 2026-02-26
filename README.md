@@ -40,7 +40,7 @@ In this scenario, I provisioned a Red Hat Enterprise Linux 9.4 virtual machine i
 
 ### 1. Established Secure SSH Access
 
-After I deployed a Red Hat Enterprise Linux 9.4 (Gen2) virtual machine using Azure IaaS, I connected to the VM using SSH from Windows PowerShell and validated the operating system version.
+After I deployed the vm, I connected to it using SSH from Windows PowerShell and validated the operating system version.
 
 <p align="left">
   <img src="assets/Screenshot 2026-02-13 220214.png" width="600">
